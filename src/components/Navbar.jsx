@@ -6,8 +6,19 @@ import "./navbar.css";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  // Function to toggle menu visibility
+  const toggleMenu = () => {
+    setShowMenu((prev) => !prev);
+  };
+
+  // Function to close menu when a link is clicked
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <nav className="nav">
+      {/* Menu */}
       <div className={`${showMenu ? "nav__menu show-menu" : "nav__menu"}`}>
         <ul className="nav__list">
           {links.map(({ name, icon, path }, index) => (
@@ -17,7 +28,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "nav__link active-nav" : "nav__link"
                 }
-                onClick={()=>setShowMenu(!showMenu)}
+                onClick={closeMenu} // Close menu when clicking a link
               >
                 {icon}
                 <h3 className="nav__name">{name}</h3>
@@ -26,9 +37,11 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+
+      {/* Hamburger Toggle */}
       <div
         className={`${showMenu ? "nav__toggle animate-toggle" : "nav__toggle"}`}
-        onClick={() => setShowMenu(!showMenu)}
+        onClick={toggleMenu}
       >
         <span></span>
         <span></span>

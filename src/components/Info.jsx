@@ -6,7 +6,11 @@ const Info = () => {
     <>
       {personalInfo.map(({ title, description }, index) => {
         return (
-          <li className="info__item" onKeyUpCapture={index}>
+          <li
+            className="info__item"
+            onKeyUpCapture={() => console.log(`KeyUp on item ${index}`)}
+            key={index}
+          >
             <span className="info__title">{title}</span>
             <span className="info__description">{description}</span>
           </li>

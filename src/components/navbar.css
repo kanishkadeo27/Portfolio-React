@@ -1,12 +1,12 @@
 .nav__menu {
   background-color: var(--first-color);
   position: fixed;
+  z-index: 9999;
   inset-block: 0;
   left: -100%;
   background-color: var(--container-color);
   width: 50%;
   padding: 60px 30px;
-  z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .show-menu {
@@ -70,7 +70,7 @@
   transform: rotate(-45deg) translateX(1px) translateY(0px);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1180px) {
   .nav__menu {
     all: unset;
   }

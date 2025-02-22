@@ -1,33 +1,44 @@
 .home {
+  display: grid;
   grid-template-columns: 4.32fr 7.68fr;
   align-items: center;
-  /* background-color: var(--first-color); */
   padding: 40px;
   height: 100vh;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto !important;
+  width: 90%;
 }
+
 .home__img {
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 450px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
-  z-index: 1;
+  z-index: 2;
 }
+
 .home__data {
-  /* background-color: var(--first-color); */
   max-width: 600px;
   margin-inline: auto;
   padding-top: 20px;
+  position: relative;
+  z-index: 2;
 }
+
 .home__title {
   position: relative;
   font-size: var(--h1-font-size);
   line-height: 1.24;
   padding-left: 70px;
 }
+
 .home__title span {
   color: var(--first-color);
 }
+
 .home__title::before {
   content: "";
   position: absolute;
@@ -38,18 +49,124 @@
   border-radius: 10px;
   background-color: var(--first-color);
 }
+
 .home__description {
-  line-height: 2.125;
+  line-height: 2;
   margin-block: 16px 32px;
   text-align: justify;
+  font-size: 1rem;
 }
 
+/* Color Block (Side Banner) */
 .color__block {
   position: fixed;
-  height: 200%;
-  width: 100%;
+  height: 180%;
+  width: 60%;
   background-color: var(--first-color);
-  top: -50%;
-  left: -83%;
+  top: -40%;
+  left: -50%;
   transform: rotate(-15deg);
+  z-index: 1;
+}
+
+/* Adjustments for Medium Screens (Remove Color Block) */
+@media (max-width: 1024px) {
+  .home {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .home__img {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .home__data {
+    max-width: 85%;
+    padding-top: 30px;
+  }
+
+  .home__title {
+    font-size: 2rem;
+    padding-left: 0;
+  }
+
+  .home__title::before {
+    display: none;
+  }
+
+  .home__description {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  /* Remove the color block below 1024px */
+  .color__block {
+    display: none;
+  }
+}
+
+/* Adjustments for Tablets */
+@media (max-width: 768px) {
+  .home__img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .home__title {
+    font-size: 1.6rem;
+  }
+
+  .home__description {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 1rem; /* Increased font size */
+    padding: 12px 24px; /* Increased padding for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Added spacing between text & icon */
+  }
+
+  .button__icon {
+    font-size: 1.2rem; /* Ensure icon is visible */
+  }
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 600px) {
+  .home {
+    padding: 40px 15px;
+  }
+
+  .home__img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .home__title {
+    font-size: 1.4rem;
+  }
+
+  .home__description {
+    font-size: 0.85rem;
+  }
+
+  .button {
+    font-size: 1rem; /* Kept a readable size */
+    padding: 14px 28px; /* Increased padding for better touch experience */
+    width: 100%; /* Make button full-width for smaller screens */
+    max-width: 250px; /* Prevent excessive width */
+    margin: 0 auto; /* Center the button */
+  }
+
+  .button__icon {
+    font-size: 1.2rem; /* Maintain proper icon size */
+  }
 }

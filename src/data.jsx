@@ -7,25 +7,25 @@ import {
   FaGraduationCap,
   FaCode,
 } from "react-icons/fa";
-import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
+import { FiFileText, FiExternalLink } from "react-icons/fi";
 
 import Work1 from "./assets/project-1.png";
 import Work2 from "./assets/project-2.png";
-import Work3 from "./assets/CurrencyConverterProject.png";
-import Work4 from "./assets/KDKeepsProject.png";
-import Work5 from "./assets/MultivendorProject.png";
-import Work6 from "./assets/CareerCompass.png";
+import Work3 from "./assets/project-3.png";
+import Work4 from "./assets/project-4.png";
+import Work5 from "./assets/project-5.png";
+import Work6 from "./assets/project-6.png";
 
-import Theme1 from "./assets/purple.png";
-import Theme2 from "./assets/red.png";
-import Theme3 from "./assets/blueviolet.png";
-import Theme4 from "./assets/blue.png";
-import Theme5 from "./assets/goldenrod.png";
-import Theme6 from "./assets/magenta.png";
-import Theme7 from "./assets/yellowgreen.png";
-import Theme8 from "./assets/orange.png";
-import Theme9 from "./assets/green.png";
-import Theme10 from "./assets/yellow.png";
+import Theme1 from "./assets/color/purple.png";
+import Theme2 from "./assets/color/red.png";
+import Theme3 from "./assets/color/blueviolet.png";
+import Theme4 from "./assets/color/blue.png";
+import Theme5 from "./assets/color/goldenrod.png";
+import Theme6 from "./assets/color/magenta.png";
+import Theme7 from "./assets/color/yellowgreen.png";
+import Theme8 from "./assets/color/orange.png";
+import Theme9 from "./assets/color/green.png";
+import Theme10 from "./assets/color/yellow.png";
 // navigation links
 export const links = [
   {

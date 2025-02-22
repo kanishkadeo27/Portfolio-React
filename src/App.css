@@ -123,6 +123,7 @@ img {
   position: relative;
   overflow: hidden;
   transition: all 0.25s ease-in-out;
+  text-align: center;
 }
 .button:hover {
   color: var(--text-white);
@@ -150,6 +151,7 @@ img {
   font-size: var(--large-font-size);
   text-align: center;
   line-height: 60px;
+  transition: all 0.3s ease-in-out;
 }
 
 .info__link {
