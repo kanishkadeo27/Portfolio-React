@@ -159,3 +159,154 @@
   line-height: 1.6;
   text-align: justify;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .about__container,
+  .resume__container {
+    grid-template-columns: 1fr; /* Make single column layout */
+    row-gap: 40px;
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr); /* Adjust skills grid to 2 columns */
+  }
+
+  .info__list {
+    text-align: center;
+  }
+
+  .info__item .info__title,
+  .info__item .info__description {
+    width: 100%;
+  }
+
+  .resume__item {
+    padding-left: 40px; /* Adjust spacing */
+  }
+
+  .resume__icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .stats__box {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  .stats__no {
+    font-size: 20px;
+  }
+
+  .stats__title {
+    font-size: 16px;
+  }
+  .skills__container {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 2-column layout for smaller screens */
+    row-gap: 20px;
+  }
+  .progress__circle {
+    width: 90px; /* Reduce size for smaller screens */
+    height: 90px;
+  }
+
+  .CircularProgressbar-text {
+    font-size: var(--normal-font-size) !important; /* Reduce text size */
+  }
+  .resume__container {
+    row-gap: 30px;
+  }
+
+  .resume__subtitle {
+    font-size: 18px;
+  }
+
+  .resume__subtitle span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 30px 15px;
+  }
+
+  .info__list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Reduce gap between items */
+    width: 100%;
+  }
+
+  .info__item {
+    display: flex;
+    flex-direction: column; /* Stack title and description */
+    align-items: flex-start; /* Align text to the left */
+    width: 100%;
+  }
+
+  .info__item .info__title {
+    width: 100%; /* Full width */
+    font-weight: var(--weight-600);
+    margin-bottom: 5px; /* Add spacing between title and description */
+  }
+
+  .info__item .info__description {
+    width: 100%; /* Full width */
+    color: var(--text-color);
+  }
+  .button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .about__info {
+    text-align: center;
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2-column layout for smaller screens */
+    /* grid-template-columns: 1fr;  */
+    /* Make skills layout single column */
+    row-gap: 20px;
+  }
+
+  .resume__item {
+    padding-left: 30px;
+  }
+
+  .resume__icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .stats__box {
+    padding: 10px;
+  }
+
+  .stats__no {
+    font-size: 14px;
+  }
+
+  .stats__title {
+    font-size: 14px;
+  }
+}
