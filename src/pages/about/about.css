@@ -1,5 +1,4 @@
 .about__container,
-/* .info__list, */
 .stats,
 .resume__container {
   grid-template-columns: repeat(2, 1fr);
@@ -13,8 +12,6 @@
 }
 .info__list {
   row-gap: 5px !important;
-  /* row-gap: 20px; */
-  /* margin-bottom: 32px; */
 }
 .info__item .info__title {
   width: 30%;
@@ -160,16 +157,15 @@
   text-align: justify;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 1024px) {
   .about__container,
   .resume__container {
-    grid-template-columns: 1fr; /* Make single column layout */
+    grid-template-columns: 1fr;
     row-gap: 40px;
   }
 
   .skills__container {
-    grid-template-columns: repeat(2, 1fr); /* Adjust skills grid to 2 columns */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .info__list {
@@ -182,7 +178,7 @@
   }
 
   .resume__item {
-    padding-left: 40px; /* Adjust spacing */
+    padding-left: 40px;
   }
 
   .resume__icon {
@@ -213,19 +209,16 @@
     font-size: 16px;
   }
   .skills__container {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* 2-column layout for smaller screens */
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
   }
   .progress__circle {
-    width: 90px; /* Reduce size for smaller screens */
+    width: 90px;
     height: 90px;
   }
 
   .CircularProgressbar-text {
-    font-size: var(--normal-font-size) !important; /* Reduce text size */
+    font-size: var(--normal-font-size) !important;
   }
   .resume__container {
     row-gap: 30px;
@@ -247,26 +240,26 @@
 
   .info__list {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 10px; /* Reduce gap between items */
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
   }
 
   .info__item {
     display: flex;
-    flex-direction: column; /* Stack title and description */
-    align-items: flex-start; /* Align text to the left */
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
   }
 
   .info__item .info__title {
-    width: 100%; /* Full width */
+    width: 100%;
     font-weight: var(--weight-600);
-    margin-bottom: 5px; /* Add spacing between title and description */
+    margin-bottom: 5px;
   }
 
   .info__item .info__description {
-    width: 100%; /* Full width */
+    width: 100%;
     color: var(--text-color);
   }
   .button {
@@ -279,12 +272,7 @@
   }
 
   .skills__container {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2-column layout for smaller screens */
-    /* grid-template-columns: 1fr;  */
-    /* Make skills layout single column */
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
   }
 

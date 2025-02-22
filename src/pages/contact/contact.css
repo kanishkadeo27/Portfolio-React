@@ -48,7 +48,6 @@
 }
 .contact__social__link {
   background-color: rgb(219, 219, 219);
-  /* background-color: var(--container-color); */
   color: var(--title-color);
   width: 40px;
   height: 40px;
@@ -94,15 +93,15 @@
 .section__title {
   margin-bottom: 80px !important;
 }
-/* Contact Page Responsive Styles */
+
 @media screen and (max-width: 1024px) {
   .contact__container {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr;
     row-gap: 40px;
   }
 
   .form__input-group {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
   }
 }
@@ -122,7 +121,7 @@
   }
 
   .form__input-group {
-    grid-template-columns: 1fr; /* Single column form inputs */
+    grid-template-columns: 1fr;
   }
 
   .contact__socials {

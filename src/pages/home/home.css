@@ -57,7 +57,6 @@
   font-size: 1rem;
 }
 
-/* Color Block (Side Banner) */
 .color__block {
   position: fixed;
   height: 180%;
@@ -69,7 +68,6 @@
   z-index: 1;
 }
 
-/* Adjustments for Medium Screens (Remove Color Block) */
 @media (max-width: 1024px) {
   .home {
     grid-template-columns: 1fr;
@@ -104,13 +102,11 @@
     text-align: center;
   }
 
-  /* Remove the color block below 1024px */
   .color__block {
     display: none;
   }
 }
 
-/* Adjustments for Tablets */
 @media (max-width: 768px) {
   .home__img {
     height: 300px;
@@ -126,20 +122,19 @@
   }
 
   .button {
-    font-size: 1rem; /* Increased font size */
-    padding: 12px 24px; /* Increased padding for better visibility */
+    font-size: 1rem;
+    padding: 12px 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; /* Added spacing between text & icon */
+    gap: 8px;
   }
 
   .button__icon {
-    font-size: 1.2rem; /* Ensure icon is visible */
+    font-size: 1.2rem;
   }
 }
 
-/* Adjustments for Small Screens */
 @media (max-width: 600px) {
   .home {
     padding: 40px 15px;
@@ -159,14 +154,14 @@
   }
 
   .button {
-    font-size: 1rem; /* Kept a readable size */
-    padding: 14px 28px; /* Increased padding for better touch experience */
-    width: 100%; /* Make button full-width for smaller screens */
-    max-width: 250px; /* Prevent excessive width */
-    margin: 0 auto; /* Center the button */
+    font-size: 1rem;
+    padding: 14px 28px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
   }
 
   .button__icon {
-    font-size: 1.2rem; /* Maintain proper icon size */
+    font-size: 1.2rem;
   }
 }

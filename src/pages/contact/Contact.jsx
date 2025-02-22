@@ -3,8 +3,6 @@ import React from "react";
 import {
   FaEnvelopeOpen,
   FaPhoneSquareAlt,
-  FaFacebookSquare,
-  FaInstagramSquare,
   FaLinkedinIn,
   FaGithubSquare,
   FaHackerrank,

@@ -23,10 +23,11 @@ const getStorageTheme = () => {
 const Themes = () => {
   const [showSwitcher, setShowSwitcher] = useState(false);
   const [color, setColor] = useState(() => getStorageColor());
-  const [theme, setTheme] = useState(()=>getStorageTheme());
+  const [theme, setTheme] = useState(() => getStorageTheme());
 
   const changeColor = (color) => {
     setColor(color);
+    setShowSwitcher(() => !showSwitcher);
   };
   const toggleTheme = () => {
     if (theme === "light-theme") {
@@ -37,13 +38,13 @@ const Themes = () => {
   };
   useEffect(() => {
     document.documentElement.style.setProperty("--first-color", color);
-    localStorage.setItem('color',color);
-  }, [theme,color]);
-  
+    localStorage.setItem("color", color);
+  }, [theme, color]);
+
   useEffect(() => {
-    document.documentElement.className=theme;
-    localStorage.setItem('theme',theme);
-  }, [theme,color]);
+    document.documentElement.className = theme;
+    localStorage.setItem("theme", theme);
+  }, [theme, color]);
 
   return (
     <>
@@ -55,9 +56,7 @@ const Themes = () => {
           <FaCog />
         </div>
         <div className="theme__toggler" onClick={toggleTheme}>
-          {
-            theme==='light-theme' ? <BsMoon/> : <BsSun/>
-          }
+          {theme === "light-theme" ? <BsMoon /> : <BsSun />}
         </div>
 
         <h3 className="style__switcher__title">Style Switcher</h3>
