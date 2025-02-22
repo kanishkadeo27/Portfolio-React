@@ -94,3 +94,63 @@
 .section__title {
   margin-bottom: 80px !important;
 }
+/* Contact Page Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    grid-template-columns: 1fr; /* Single column layout */
+    row-gap: 40px;
+  }
+
+  .form__input-group {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact__info {
+    align-items: center;
+  }
+
+  .info__item {
+    justify-content: center;
+  }
+
+  .form__input-group {
+    grid-template-columns: 1fr; /* Single column form inputs */
+  }
+
+  .contact__socials {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact__title {
+    font-size: var(--h4-font-size);
+  }
+
+  .contact__description {
+    font-size: var(--smaller-font-size);
+  }
+
+  .contact__social__link {
+    width: 35px;
+    height: 35px;
+    line-height: 39px;
+  }
+
+  .form__control {
+    padding: 10px 20px;
+    font-size: var(--smaller-font-size);
+  }
+
+  .textarea {
+    height: 120px;
+  }
+}
