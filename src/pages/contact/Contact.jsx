@@ -49,16 +49,28 @@ const Contact = () => {
               </div>
             </div>
             <div className="contact__socials">
-              <a href="https://www.hackerrank.com/profile/kanishkadeo92022" className="contact__social__link">
+              <a
+                href="https://www.hackerrank.com/profile/kanishkadeo92022"
+                className="contact__social__link"
+              >
                 <FaHackerrank />
               </a>
-              <a href="https://app.netlify.com/teams/kanishkadeo27-cps7jci/sites" className="contact__social__link">
+              <a
+                href="https://app.netlify.com/teams/kanishkadeo27-cps7jci/sites"
+                className="contact__social__link"
+              >
                 <FaNetworkWired />
               </a>
-              <a href="https://github.com/kanishkadeo27" className="contact__social__link">
+              <a
+                href="https://github.com/kanishkadeo27"
+                className="contact__social__link"
+              >
                 <FaGithubSquare />
               </a>
-              <a href="https://www.linkedin.com/in/kanishka-deo-077280201/" className="contact__social__link">
+              <a
+                href="https://www.linkedin.com/in/kanishka-deo-077280201/"
+                className="contact__social__link"
+              >
                 <FaLinkedinIn />
               </a>
             </div>

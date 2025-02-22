@@ -16,17 +16,16 @@ const Home = () => {
             Frontend Developer
           </h1>
           <p className="home__description">
-            I am a hard-working and ambitious individual with a strong
-            career-oriented mindset, always eager to learn and embrace
-            innovative ideas to achieve positive outcomes. With a proven ability
-            to transform client concepts into aesthetically pleasing and
-            functional designs, I thrive on challenges and strive to deliver
-            exceptional results. My dedication to continuous learning and
-            improvement fuels my passion for turning ideas into impactful
-            solutions.
+            Hard-working and ambitious Frontend Developer with a strong
+            career-oriented mindset and a passion for learning and innovation.
+            Skilled in React.js, JavaScript, HTML and CSS, with experience in
+            building responsive UI, state management, API integration, and
+            performance optimization ensuring efficient development practices.
+            Dedicated to transforming ideas into impactful solutions and eager
+            to contribute to a dynamic organization.
           </p>
           <Link to="/about" className="button">
-            More About Me{" "}
+            Know More{" "}
             <span className="button__icon">
               <FaArrowRight />
             </span>

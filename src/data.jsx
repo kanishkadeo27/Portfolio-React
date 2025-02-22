@@ -11,10 +11,10 @@ import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
 
 import Work1 from "./assets/project-1.png";
 import Work2 from "./assets/project-2.png";
-import Work3 from "./assets/project-3.jpeg";
-import Work4 from "./assets/project-4.jpeg";
-import Work5 from "./assets/project-5.jpg";
-import Work6 from "./assets/project-6.jpg";
+import Work3 from "./assets/CurrencyConverterProject.png";
+import Work4 from "./assets/KDKeepsProject.png";
+import Work5 from "./assets/MultivendorProject.png";
+import Work6 from "./assets/CareerCompass.png";
 
 import Theme1 from "./assets/purple.png";
 import Theme2 from "./assets/red.png";
@@ -26,7 +26,7 @@ import Theme7 from "./assets/yellowgreen.png";
 import Theme8 from "./assets/orange.png";
 import Theme9 from "./assets/green.png";
 import Theme10 from "./assets/yellow.png";
-
+// navigation links
 export const links = [
   {
     id: 1,
@@ -56,43 +56,29 @@ export const links = [
     path: "/contact",
   },
 ];
-// Function to calculate age dynamically
-function calculateAge(birthdate) {
-  const today = new Date();
-  const birthDate = new Date(birthdate);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const monthDifference = today.getMonth() - birthDate.getMonth();
-
-  // Adjust age if the birthdate hasn't occurred yet this year
-  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
-
-  return age;
-}
+// About me info data
 export const personalInfo = [
   {
     id: 1,
-    title: "First Name : ",
-    description: "Kanishka",
+    title: "Name : ",
+    description: "Kanishka Deo",
   },
 
   {
     id: 2,
-    title: "Last Name : ",
-    description: "Deo",
+    title: "Location : ",
+    description: "Ratlam , Madhya Pradesh , India",
   },
-
   {
     id: 3,
-    title: "Age : ",
-    description: calculateAge("2002-01-27") + " Years",
+    title: "Phone : ",
+    description: "+91-6264547523",
   },
 
   {
     id: 4,
-    title: "Nationality : ",
-    description: "Indian",
+    title: "Email : ",
+    description: "kanishkadeo27012002@gmail.com",
   },
 
   {
@@ -103,68 +89,53 @@ export const personalInfo = [
 
   {
     id: 6,
-    title: "Address : ",
-    description: "Ratlam(M.P)",
+    title: "Github : ",
+    description: (
+      <a
+        className="info__link"
+        href="https://github.com/kanishkadeo27"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://github.com/kanishkadeo27
+      </a>
+    ),
   },
-
   {
     id: 7,
-    title: "Phone : ",
-    description: "+916264547523",
+    title: "Linkdln : ",
+    description: (
+      <a
+        className="info__link"
+        href="https://www.linkedin.com/in/kanishka-deo-077280201/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://www.linkedin.com/in/kanishka-deo-077280201/
+      </a>
+    ),
   },
 
   {
     id: 8,
-    title: "Email : ",
-    description: "kanishkadeo27012002@gmail.com",
-  },
-
-  {
-    id: 9,
-    title: "Github : ",
-    description: <a href="https://github.com/kanishkadeo27" target="_blank" rel="noopener noreferrer" style={{
-      maxWidth: "400px", // Adjust the width as needed
-      wordWrap: "break-word",
-      overflowWrap: "anywhere",
-    }}>
-      https://github.com/kanishkadeo27
-    </a>,
-  },
-  {
-    id: 10,
-    title: "Linkdln : ",
-    description: <a href="https://www.linkedin.com/in/kanishka-deo-077280201/" target="_blank" rel="noopener noreferrer" style={{
-      maxWidth: "400px", // Adjust the width as needed
-      wordWrap: "break-word",
-      overflowWrap: "anywhere",
-    }}>
-      https://www.linkedin.com/in/kanishka-deo-077280201/
-    </a>,
-  },
-
-  {
-    id: 11,
     title: "Hackerrank : ",
-    description: <a href="https://www.hackerrank.com/profile/kanishkadeo92022" target="_blank" rel="noopener noreferrer" style={{
-      maxWidth: "600px", // Adjust the width as needed
-      wordWrap: "break-word",
-      overflowWrap: "anywhere",
-    }}>
-      https://www.hackerrank.com/profile/kanishkadeo92022
-    </a>,
-  },
-
-  {
-    id: 12,
-    title: "Langages : ",
-    description: "Hindi, English , Marathi",
+    description: (
+      <a
+        className="info__link"
+        href="https://www.hackerrank.com/profile/kanishkadeo92022"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://www.hackerrank.com/profile/kanishkadeo92022
+      </a>
+    ),
   },
 ];
-
+// about me stats
 export const stats = [
   {
     id: 1,
-    no: "1+",
+    no: "fresher",
     title: "Years of <br /> Experience",
   },
 
@@ -186,14 +157,84 @@ export const stats = [
     title: " Certifications <br /> Done",
   },
 ];
+// about me skills
+export const skills = [
+  {
+    id: 1,
+    title: "C Language",
+    percentage: "90",
+  },
 
+  {
+    id: 2,
+    title: "C++",
+    percentage: "80",
+  },
+
+  {
+    id: 3,
+    title: "HTML",
+    percentage: "95",
+  },
+
+  {
+    id: 4,
+    title: "CSS",
+    percentage: "90",
+  },
+
+  {
+    id: 5,
+    title: "Javascript",
+    percentage: "85",
+  },
+
+  {
+    id: 6,
+    title: "React Js",
+    percentage: "80",
+  },
+
+  {
+    id: 7,
+    title: "Bootstrap",
+    percentage: "75",
+  },
+
+  {
+    id: 8,
+    title: "Wordpress",
+    percentage: "50",
+  },
+  {
+    id: 9,
+    title: "Git",
+    percentage: "50",
+  },
+  {
+    id: 10,
+    title: "Github",
+    percentage: "70",
+  },
+  {
+    id: 11,
+    title: "SQL",
+    percentage: "50",
+  },
+  {
+    id: 12,
+    title: "RWD",
+    percentage: "80",
+  },
+];
+// about me education and experience
 export const resume = [
   {
     id: 1,
     category: "experience",
     icon: <FaBriefcase />,
     year: "Jan'2024 - June'2024",
-    title: "React Developer <span> Axelor </span>",
+    title: "React Developer <span> Axelor Technologies Pvt Ltd </span>",
     desc: "During my 6-month internship at Axelor Technologies Pvt Ltd, I underwent 3 months of training in HTML, CSS, JavaScript, React, and Git. I worked on projects like building a portfolio website, implementing form validations, and creating a shopping cart. In the second phase, I contributed to developing two modules of an existing project, gaining experience in real-world software development and collaboration. This internship significantly improved my technical skills, problem-solving abilities, and teamwork.",
   },
 
@@ -209,7 +250,7 @@ export const resume = [
     id: 3,
     category: "education",
     icon: <FaGraduationCap />,
-    year: "Aug'2020 - April'2024",
+    year: "Aug'2020 - May'2024",
     title: "BTECH CSE-AI <span> Parul University , Vadodara Gujarat </span>",
     desc: "8.40 CGPA",
   },
@@ -231,56 +272,7 @@ export const resume = [
   },
 ];
 
-export const skills = [
-  {
-    id: 1,
-    title: "Html",
-    percentage: "90",
-  },
-
-  {
-    id: 2,
-    title: "Javascript",
-    percentage: "80",
-  },
-
-  {
-    id: 3,
-    title: "Css",
-    percentage: "80",
-  },
-
-  {
-    id: 4,
-    title: "React",
-    percentage: "75",
-  },
-
-  {
-    id: 5,
-    title: "Bootstrap",
-    percentage: "50",
-  },
-
-  {
-    id: 6,
-    title: "C++",
-    percentage: "80",
-  },
-
-  {
-    id: 7,
-    title: "Git",
-    percentage: "75",
-  },
-
-  {
-    id: 8,
-    title: "C",
-    percentage: "80",
-  },
-];
-
+// projects portfolio
 export const portfolio = [
   {
     id: 1,
@@ -300,14 +292,20 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: <a href="https://todolistapplicationminiproject.netlify.app/" target="_blank" rel="noopener noreferrer" style={{
-          maxWidth: "600px", // Adjust the width as needed
-          wordWrap: "break-word",
-          overflowWrap: "anywhere",
-        }}>
-          Click to Preview        </a>,
-
-
+        desc: (
+          <a
+            href="https://todolistapplicationminiproject.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              maxWidth: "600px", // Adjust the width as needed
+              wordWrap: "break-word",
+              overflowWrap: "anywhere",
+            }}
+          >
+            Click to Preview{" "}
+          </a>
+        ),
       },
     ],
   },
@@ -330,14 +328,20 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: <a href="https://quiz-app-with-scores.netlify.app/" target="_blank" rel="noopener noreferrer" style={{
-          maxWidth: "600px", // Adjust the width as needed
-          wordWrap: "break-word",
-          overflowWrap: "anywhere",
-        }}>
-          Click to Preview</a>,
-
-
+        desc: (
+          <a
+            href="https://quiz-app-with-scores.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              maxWidth: "600px", // Adjust the width as needed
+              wordWrap: "break-word",
+              overflowWrap: "anywhere",
+            }}
+          >
+            Click to Preview
+          </a>
+        ),
       },
     ],
   },
@@ -345,12 +349,12 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: "Random Password Generator",
+    title: "Currency Converter",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Video",
+        desc: "Currency Converter",
       },
       {
         icon: <FaCode />,
@@ -360,14 +364,20 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: <a href="https://random-pass-generator-application.netlify.app/" target="_blank" rel="noopener noreferrer" style={{
-          maxWidth: "600px", // Adjust the width as needed
-          wordWrap: "break-word",
-          overflowWrap: "anywhere",
-        }}>
-          Click to Preview</a>,
-
-
+        desc: (
+          <a
+            href="https://currency-convertex.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              maxWidth: "600px", // Adjust the width as needed
+              wordWrap: "break-word",
+              overflowWrap: "anywhere",
+            }}
+          >
+            Click to Preview
+          </a>
+        ),
       },
     ],
   },
@@ -390,12 +400,20 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: <a href="https://kd-keeps.netlify.app/" target="_blank" rel="noopener noreferrer" style={{
-          maxWidth: "600px", // Adjust the width as needed
-          wordWrap: "break-word",
-          overflowWrap: "anywhere",
-        }}>
-          Click to Preview</a>,
+        desc: (
+          <a
+            href="https://kd-keeps.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              maxWidth: "600px", // Adjust the width as needed
+              wordWrap: "break-word",
+              overflowWrap: "anywhere",
+            }}
+          >
+            Click to Preview
+          </a>
+        ),
       },
     ],
   },
@@ -403,19 +421,32 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: "Landing Page",
+    title: "Eshop",
     details: [
       {
         title: "Project : ",
-        desc: "Gym Landing Page",
+        desc: "Multivendor Ecommerce",
       },
       {
         title: "Language : ",
-        desc: "Html , css, javascript",
+        desc: "Html , css, javascript , react , express , node , razorpay , mongodb",
       },
       {
         title: "Preview : ",
-        desc: "www.dribble.com",
+        desc: (
+          <a
+            href="https://multivendorshopo.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              maxWidth: "600px", // Adjust the width as needed
+              wordWrap: "break-word",
+              overflowWrap: "anywhere",
+            }}
+          >
+            Click to Preview
+          </a>
+        ),
       },
     ],
   },
@@ -423,27 +454,35 @@ export const portfolio = [
   {
     id: 6,
     img: Work6,
-    title: "Digital Clock",
+    title: "Career Compass",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Digital clock",
+        desc: "Career Guidance Website",
       },
       {
         icon: <FaCode />,
         title: "Language : ",
-        desc: "html , css , javascript",
+        desc: "html , css , javascript , nodejs",
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: <a href="https://digital-clock-mini-project.netlify.app/" target="_blank" rel="noopener noreferrer" style={{
-          maxWidth: "600px", // Adjust the width as needed
-          wordWrap: "break-word",
-          overflowWrap: "anywhere",
-        }}>
-          Click to Preview</a>,
+        desc: (
+          <a
+            href="https://careercompasswebapp.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              maxWidth: "600px", // Adjust the width as needed
+              wordWrap: "break-word",
+              overflowWrap: "anywhere",
+            }}
+          >
+            Click to Preview
+          </a>
+        ),
       },
     ],
   },
