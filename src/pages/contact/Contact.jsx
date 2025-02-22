@@ -77,7 +77,7 @@ const Contact = () => {
                 <div>
                   <span className="info__title">Mail Me:</span>
                   <h4 className="info__description">
-                    kanishkadeo27012002@gmail.com
+                    kanishkadeo2701@gmail.com
                   </h4>
                 </div>
               </div>
